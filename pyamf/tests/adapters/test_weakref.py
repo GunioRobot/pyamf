@@ -93,20 +93,6 @@ class ProxyTestCase(BaseTestCase):
 
 
 
-class WeakKeyDictionaryTestCase(BaseTestCase):
-    """
-    Tests for L{weakref.WeakKeyDictionary}
-    """
-
-    def getReferent(self):
-        return {Foo(): 'bar', Foo(): 'gak', Foo(): [1, 2, 'eggs']}
-
-
-    def getReference(self, obj):
-        return weakref.WeakKeyDictionary(obj)
-
-
-
 class WeakValueDictionaryTestCase(BaseTestCase):
     """
     Tests for L{weakref.WeakValueDictionary}
