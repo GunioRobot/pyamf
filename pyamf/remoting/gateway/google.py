@@ -168,6 +168,9 @@ class WebAppGateway(webapp.RequestHandler, gateway.BaseGateway):
         self.response.out.write(response)
 
     def __call__(self, request, *args, **kwargs):
+        if not request:
+            return self
+
         app = webapp.WSGIApplication
 
         # try to get the threadlocal WSGIApplication.app instance
