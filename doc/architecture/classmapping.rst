@@ -11,7 +11,7 @@ In this example we use the Python classes below.
 
 With the corresponding Actionscript 3.0 classes that were
 registered in the Flash Player using the `flash.net.registerClassAlias`
-utility: 
+utility:
 
 .. literalinclude:: examples/class-mapping/example-classes.as
    :linenos:

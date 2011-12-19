@@ -1,5 +1,5 @@
 **********
-  Django 
+  Django
 **********
 
 .. image:: images/django-logo.png
@@ -51,7 +51,7 @@ it to your ``urlconf``:
 
 .. code-block:: python
    :linenos:
-   
+
    # yourproject/urls.py
 
    urlpatterns = patterns('',

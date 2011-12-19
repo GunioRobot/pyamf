@@ -11,11 +11,11 @@ package org.pyamf.examples.simple
 		public var username	: String;
 		public var password	: String;
 		public var email	: String;
-		
+
 		public function User()
 		{
 			super();
 		}
-		
+
 	}
 }

@@ -8,7 +8,7 @@ package org.pyamf.examples.addressbook.models
 	public class Email extends SAObject
 	{
 		public static var ALIAS	:String = 'org.pyamf.examples.addressbook.models.Email';
-		
+
 		public var id			: Object;
 		public var user_id		: Object;
 		public var label		: String;

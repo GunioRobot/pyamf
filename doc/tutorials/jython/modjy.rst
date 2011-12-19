@@ -1,5 +1,5 @@
 **********
-  modjy 
+  modjy
 **********
 
 .. image:: images/modjy-pyamf.png
@@ -18,7 +18,7 @@
    on ``http://localhost:8080/pyamf/``.
 
    This was tested with Jython_ 2.5, `Apache Tomcat`_ 6.0.20, and Java 1.6
-   on Mac OS X 10.5.7. 
+   on Mac OS X 10.5.7.
 
 .. contents::
 
@@ -50,7 +50,7 @@ is to look first inside the ``WEB-INF/lib`` directory for a web
 application, so place the ``jython.jar`` file in there:
 
 .. code-block:: bash
-   
+
    cp -R /path/to/jython2.5.0/jython.jar webapps/pyamf/WEB-INF/lib
 
 
@@ -68,7 +68,7 @@ Start Server
 ============
 
 Now start Tomcat::
-  
+
   bin/startup.sh
 
 Browse to http://localhost:8080/pyamf/ where you should see Jython

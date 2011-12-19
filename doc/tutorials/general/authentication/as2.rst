@@ -16,7 +16,7 @@ Installation
 First you need to install the free Flash Remoting components for `Adobe Flash MX 2004`_
 or `Adobe Flash 8.0`_.
 
-If you want to use Flash Remoting for |ActionScript (TM)| 2.0 in Adobe Flash CS3, 
+If you want to use Flash Remoting for |ActionScript (TM)| 2.0 in Adobe Flash CS3,
 check this page_ for more info.
 
 Source

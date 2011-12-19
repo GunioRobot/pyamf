@@ -5,7 +5,7 @@
 package org.pyamf.examples.addressbook.components
 {
 	import flash.display.DisplayObject;
-	
+
 	import mx.containers.TitleWindow;
 	import mx.controls.DataGrid;
 	import mx.controls.TextInput;
@@ -15,51 +15,51 @@ package org.pyamf.examples.addressbook.components
 	import mx.rpc.AbstractOperation;
 	import mx.rpc.events.ResultEvent;
 	import mx.rpc.remoting.mxml.RemoteObject;
-	
+
 	import org.pyamf.examples.addressbook.models.Email;
 	import org.pyamf.examples.addressbook.models.PhoneNumber;
 	import org.pyamf.examples.addressbook.models.User;
-			
+
 	public class EditUserDlgClass extends TitleWindow
 	{
 		[Bindable]
 		public var user				: User;
-		
+
 		public var emails			: DataGrid;
 		public var phone_numbers	: DataGrid;
 		public var firstName		: TextInput;
 		public var lastName			: TextInput;
-		
+
 		/**
-		 * Constructor. 
-		 */		
+		 * Constructor.
+		 */
 		public function EditUserDlgClass()
 		{
 			super();
-			
+
 			addEventListener(FlexEvent.CREATION_COMPLETE, creationCompleteHandler);
 		}
-		
+
 		protected function creationCompleteHandler( event:FlexEvent ):void
 		{
 			PopUpManager.centerPopUp(this);
-			
+
 			if (user.isAttrLazy("emails"))
 			{
 				user.loadAttr("emails");
 			}
-			
+
 			if (user.isAttrLazy("phone_numbers"))
 			{
 				user.loadAttr("phone_numbers");
 			}
 		}
-		
+
 		protected function close():void
 		{
-			PopUpManager.removePopUp(this);	
+			PopUpManager.removePopUp(this);
 		}
-		
+
 		/**
 		 * Add a new e-mail address.
 		 */
@@ -69,9 +69,9 @@ package org.pyamf.examples.addressbook.components
 			user.emails.addItem(email);
 			var editEmailDlg:EditEmailDlg = new EditEmailDlg();
 			editEmailDlg.email = email;
-			PopUpManager.addPopUp(editEmailDlg, DisplayObject(Application.application));	
+			PopUpManager.addPopUp(editEmailDlg, DisplayObject(Application.application));
 		}
-		
+
 		/**
 		 * Edit an existing e-mail address.
 		 */
@@ -79,9 +79,9 @@ package org.pyamf.examples.addressbook.components
 		{
 			var editEmailDlg:EditEmailDlg = new EditEmailDlg();
 			editEmailDlg.email = Email(emails.selectedItem);
-			PopUpManager.addPopUp(editEmailDlg, DisplayObject(Application.application));	
+			PopUpManager.addPopUp(editEmailDlg, DisplayObject(Application.application));
 		}
-		
+
 		/**
 		 * Remove e-mail addresses
 		 */
@@ -93,7 +93,7 @@ package org.pyamf.examples.addressbook.components
 				user.emails.removeItemAt(i);
 			}
 		}
-		
+
 		/**
 		 * Add a new phone number.
 		 */
@@ -101,13 +101,13 @@ package org.pyamf.examples.addressbook.components
 		{
 			var phone_number:PhoneNumber = new PhoneNumber();
 			user.phone_numbers.addItem(phone_number);
-			
+
 			var editPhoneDlg:EditPhoneDlg = new EditPhoneDlg();
 			editPhoneDlg.phone = phone_number;
-			
-			PopUpManager.addPopUp(editPhoneDlg, DisplayObject(Application.application));	
+
+			PopUpManager.addPopUp(editPhoneDlg, DisplayObject(Application.application));
 		}
-		
+
 		/**
 		 * Edit an existing e-mail address.
 		 */
@@ -115,10 +115,10 @@ package org.pyamf.examples.addressbook.components
 		{
 			var editPhoneDlg:EditPhoneDlg = new EditPhoneDlg();
 			editPhoneDlg.phone = PhoneNumber(phone_numbers.selectedItem);
-			
-			PopUpManager.addPopUp(editPhoneDlg, DisplayObject(Application.application));	
+
+			PopUpManager.addPopUp(editPhoneDlg, DisplayObject(Application.application));
 		}
-		
+
 		/**
 		 * Remove e-mail addresses.
 		 */
@@ -130,7 +130,7 @@ package org.pyamf.examples.addressbook.components
 				user.phone_numbers.removeItemAt(i);
 			}
 		}
-		
+
 		/**
 		 * Persist a user.
 		 */
@@ -138,13 +138,13 @@ package org.pyamf.examples.addressbook.components
 		{
 			user.first_name = firstName.text;
 			user.last_name = lastName.text;
-			
+
 			var remoteObj:RemoteObject = Application.application.getService();
 			var operation:AbstractOperation = remoteObj.getOperation('save');
             operation.addEventListener(ResultEvent.RESULT, save_resultHandler);
             operation.send(user);
 		}
-		
+
 		protected function save_resultHandler(event:Event):void
 		{
 			event.target.removeEventListener(ResultEvent.RESULT, save_resultHandler);
@@ -152,9 +152,9 @@ package org.pyamf.examples.addressbook.components
 			{
 				Application.application.loadUsers();
 			}
-			
+
 			close();
 		}
-		
+
 	}
 }

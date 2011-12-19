@@ -1,5 +1,5 @@
 *********************
-  Adapter Framework 
+  Adapter Framework
 *********************
 
 .. topic:: Introduction
@@ -44,7 +44,7 @@ So, code like this works:
 As well as:
 
 .. code-block:: python
-   
+
    import pyamf
    from django import http
 

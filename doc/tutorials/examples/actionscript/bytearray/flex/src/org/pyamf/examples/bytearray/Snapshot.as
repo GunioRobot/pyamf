@@ -7,7 +7,7 @@ package org.pyamf.examples.bytearray
 
 	import flash.display.BitmapData;
 	import flash.display.IBitmapDrawable;
-	
+
 	import mx.graphics.ImageSnapshot;
 	import mx.graphics.codec.JPEGEncoder;
 
@@ -21,7 +21,7 @@ package org.pyamf.examples.bytearray
 		private var _png		: ImageSnapshot;
 		private var _jpg		: ImageSnapshot;
 		private var _image		: ImageSnapshot;
-			
+
 		public function Snapshot( source:IBitmapDrawable, width:int=320, height:int=240, type:String="jpg" )
 		{
 			_width = width;
@@ -30,14 +30,14 @@ package org.pyamf.examples.bytearray
 			_type = type;
 		}
 
-		
+
 		public function get bitmap():BitmapData
 		{
 			_bitmap = ImageSnapshot.captureBitmapData(_data);
 
 			return _bitmap;
 		}
-		
+
 		public function get image():ImageSnapshot
 		{
 			if (_type == "jpg")
@@ -49,18 +49,18 @@ package org.pyamf.examples.bytearray
 
 			return _image;
 		}
-			
+
 		public function get png(): ImageSnapshot
 		{
 			_png = ImageSnapshot.captureImage(_data);
 			return _png;
 		}
-		
+
 		public function get jpg(): ImageSnapshot
 		{
 			_jpg = ImageSnapshot.captureImage(_data, 0, new JPEGEncoder());
 			return _jpg;
 		}
-		
+
 	}
 }

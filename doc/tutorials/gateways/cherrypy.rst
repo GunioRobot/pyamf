@@ -1,5 +1,5 @@
 *************
-  CherryPy 
+  CherryPy
 *************
 
 .. image:: images/cherrypy-logo.jpg

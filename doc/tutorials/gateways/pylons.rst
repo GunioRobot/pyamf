@@ -1,5 +1,5 @@
 **********
-  Pylons 
+  Pylons
 **********
 
 .. topic:: Introduction
@@ -48,16 +48,16 @@ Example
 
   Just below that line, add a mapping to the controller you created earlier. This maps URLs with
   the prefix 'gateway' to the AMF gateway.
-  
+
   .. code-block:: python
-  
+
      map.connect('/gateway', controller='gateway')
 
 
 5. Import the remoting gateway, open ``testproject/lib/helpers.py`` and add:
 
   .. code-block:: python
-    
+
      from pyamf.remoting.gateway.wsgi import WSGIGateway
 
 

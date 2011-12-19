@@ -1,5 +1,5 @@
 *****************
-  Shared Object 
+  Shared Object
 *****************
 
 .. topic:: Introduction

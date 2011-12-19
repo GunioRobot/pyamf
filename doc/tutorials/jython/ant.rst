@@ -1,5 +1,5 @@
 **********
-  Ant 
+  Ant
 **********
 
 .. image:: images/ant-logo.gif
@@ -41,7 +41,7 @@ Application Setup
 Start out with checking whether Apache Ant is working:
 
 .. code-block:: bash
- 
+
    ant -version
 
 Returns the version number::
@@ -130,7 +130,7 @@ that start with ``*sys-package-mgr*: processing new jar``.
 The default folder where these cache files are stored is ``jython/cachedir``.
 
 The final line shows your AMF gateway is up and running.
-  
+
 
 Clients
 =======

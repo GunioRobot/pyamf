@@ -39,7 +39,7 @@ Highlighted Features
   You can register a module:
 
   .. code-block:: python
-  
+
      import pyamf
 
      from myproj.myapp import models
@@ -125,7 +125,7 @@ Django
    from django.db import models
 
    class CommonInfo(models.Model):
-       name = models.CharField(max_length=100) 
+       name = models.CharField(max_length=100)
        age = models.PositiveIntegerField()
 
        class Meta:

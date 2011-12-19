@@ -73,5 +73,5 @@ list.
 ----
 
 `Subscribe <http://lists.pyamf.org/mailman/listinfo/builds Subscribe>`__ -
-`Archives <http://lists.pyamf.org/archives/builds>`__ - 
+`Archives <http://lists.pyamf.org/archives/builds>`__ -
 `marc <http://marc.info/?l=pyamf-builds&r=1&w=2>`__

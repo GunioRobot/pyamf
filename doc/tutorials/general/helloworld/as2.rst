@@ -18,7 +18,7 @@ components for
 `Adobe Flash MX 2004 <http://www.adobe.com/products/flashremoting/downloads/components/#flr_as2>`_
 or `Adobe Flash 8.0 <http://www.adobe.com/products/flashremoting/downloads/components/#flr_fl81>`_.
 
-If you want to use Flash Remoting for |ActionScript (TM)| 2.0 in Adobe Flash CS3, 
+If you want to use Flash Remoting for |ActionScript (TM)| 2.0 in Adobe Flash CS3,
 check this `page <http://blog.vixiom.com/2007/04/17/actionscript-20-flash-remoting-with-flash-cs3/>`_
 for more info.
 

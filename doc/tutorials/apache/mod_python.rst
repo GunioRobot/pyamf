@@ -1,5 +1,5 @@
 **************
-  mod_python 
+  mod_python
 **************
 
 .. image:: images/mod_python-logo.gif
@@ -11,7 +11,7 @@
    `mod_python <http://modpython.org>`_. Mod_python is an Apache module
    that embeds the Python interpreter within the server. This was tested
    with Python 2.4.3 and
-   `Ubuntu 6.06.1 LTS <https://wiki.ubuntu.com/DapperReleaseNotes>`_. 
+   `Ubuntu 6.06.1 LTS <https://wiki.ubuntu.com/DapperReleaseNotes>`_.
 
    This tutorial assumes you already installed the Apache webserver
    running (on 192.168.1.100). Flash applications will be able to access
@@ -33,7 +33,7 @@ Grab the `WSGI gateway for mod_python
 application folder:
 
 .. code-block:: bash
-   
+
    wget http://www.aminus.net/browser/modpython_gateway.py?format=raw
    mv modpython_gateway.py?format=raw /var/www/myApp/wsgi.py
 
@@ -64,7 +64,7 @@ Restart Apache
 ==============
 
 That's it! Your Adobe Flash Player and AMF clients will now be able to
-access your PyAMF application through http://192.168.1.100/flashservices/gateway. 
+access your PyAMF application through http://192.168.1.100/flashservices/gateway.
 
 
 Useful Resources

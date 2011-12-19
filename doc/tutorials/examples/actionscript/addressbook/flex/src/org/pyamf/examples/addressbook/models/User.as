@@ -5,12 +5,12 @@
 package org.pyamf.examples.addressbook.models
 {
 	import mx.collections.ArrayCollection;
-	
+
 	[Bindable]
 	public class User extends SAObject
 	{
 		public static var ALIAS		: String = 'org.pyamf.examples.addressbook.models.User';
-		
+
 		public var id				: Object;
 		public var first_name		: String;
 		public var last_name		: String;

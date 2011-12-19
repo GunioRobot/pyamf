@@ -1,5 +1,5 @@
 ************
-  Type Map 
+  Type Map
 ************
 
 .. topic:: Overview

@@ -1,9 +1,9 @@
-package 
+package
 {
 	import flash.desktop.NativeApplication;
 	import flash.display.Sprite;
 	import flash.events.Event;
-	
+
 	import org.pyamf.examples.air.udp.events.LogEvent;
 	import org.pyamf.examples.air.udp.net.NetworkConnection;
 	import org.pyamf.examples.air.udp.net.UDPConnection;
@@ -14,28 +14,28 @@ package
 		private var connection			: UDPConnection;
 		private var network				: NetworkConnection;
 		private var logEvent			: LogEvent;
-		
+
 		private static var window		: TextWindow;
-		
+
 		/**
 		 * Constructor.
-		 */		
+		 */
 		public function UDPExample()
 		{
 			super();
-			
+
 			// setup AIR
 			NativeApplication.nativeApplication.autoExit = true;
-			
+
 			// create text window
 			window = new TextWindow();
 			stage.nativeWindow.close();
-			
+
 			// listen for events
 			addEventListener( Event.ADDED_TO_STAGE, onWindowComplete,
 							  false, 0, true );
 		}
-		
+
 		private function onWindowComplete( event:Event ) : void
 		{
 			removeEventListener( event.type, onWindowComplete );
@@ -60,13 +60,13 @@ package
 				log( logEvent );
 			}
 		}
-		
+
 		private function onNetworkChange( event:Event ) : void
 		{
 			logEvent = new LogEvent( LogEvent.NETWORK_INFO, event.toString() );
 			log( logEvent );
 		}
-		
+
 		private static function log( event:LogEvent ) : void
 		{
 			switch ( event.type )
@@ -74,12 +74,12 @@ package
 				case LogEvent.NETWORK_INFO:
 					window.connection += event.message;
 					break;
-				
+
 				case LogEvent.NETWORK_TRAFFIC:
 					window.text += event.message;
 					break;
 			}
 		}
-		
+
 	}
 }

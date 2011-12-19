@@ -5,7 +5,7 @@
 .. topic:: Introduction
 
    This |ActionScript (TM)| 3.0 example can be used with
-   the Adobe Flash CS3 (or newer) authoring tool. 
+   the Adobe Flash CS3 (or newer) authoring tool.
 
 .. contents::
 

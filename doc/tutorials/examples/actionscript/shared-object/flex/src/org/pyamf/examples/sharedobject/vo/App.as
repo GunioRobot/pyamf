@@ -7,7 +7,7 @@ package org.pyamf.examples.sharedobject.vo
 		public var path:String;
 		public var domain:String;
 		public var files:Array;
-			
+
 		public function App( name:String="",
 									  path:String="",
 									  domain:String="",

@@ -1,5 +1,5 @@
 ********************
-  Stackless Python 
+  Stackless Python
 ********************
 
 .. topic:: Introduction

@@ -1,5 +1,5 @@
 **********
-  web2py 
+  web2py
 **********
 
 A nice tutorial for web2py_ can be found on this_ page.

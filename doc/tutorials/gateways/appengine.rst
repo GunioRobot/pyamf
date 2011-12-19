@@ -1,5 +1,5 @@
 **********************
-  Google App Engine 
+  Google App Engine
 **********************
 
 .. image:: images/appengine-logo.gif

@@ -84,7 +84,7 @@ Restart Apache
 
 That's it! Your Adobe Flash Player and AMF clients will now be able
 to access your PyAMF application through
-http://192.168.1.100/flashservices/gateway. 
+http://192.168.1.100/flashservices/gateway.
 
 Test the gateway
 ----------------

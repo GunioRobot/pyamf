@@ -1,5 +1,5 @@
 **********
-  Client 
+  Client
 **********
 
 .. topic:: Introduction

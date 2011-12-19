@@ -1,5 +1,5 @@
 **********
-  Swing 
+  Swing
 **********
 
 .. topic:: Introduction
@@ -15,7 +15,7 @@ Download
 Grab the example from Git with:
 
 .. code-block:: bash
- 
+
    git clone git://github.com/hydralabs/pyamf.git
    cd pyamf/doc/tutorials/examples/jython/swing
 

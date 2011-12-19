@@ -1,5 +1,5 @@
 *********************
-  Attribute Control 
+  Attribute Control
 *********************
 
 .. topic:: Introduction

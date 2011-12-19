@@ -1,5 +1,5 @@
 *************
-  Twisted 
+  Twisted
 *************
 
 .. topic:: Introduction

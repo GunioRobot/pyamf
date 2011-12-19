@@ -15,7 +15,7 @@ remoteObject.echo( "Hello World" );
 
 
 // Here is the result event listener
-private function onEchoComplete( event:ResultEvent ):void 
+private function onEchoComplete( event:ResultEvent ):void
 {
   Alert.show( event.result.toString() );
 }

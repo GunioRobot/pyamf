@@ -9,7 +9,7 @@
 
    Adobe AIR >= 2.0 supports `UDP sockets`_, allowing you to send
    and receive messages using the Universal Datagram Protocol (UDP).
-   
+
    The example application shows you how to echo a typed object
    every x seconds and display the active hardware and software
    network interfaces that are available on the client computer.

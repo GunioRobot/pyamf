@@ -1,7 +1,7 @@
 package org.pyamf.examples.sharedobject.vo
 {
 	[RemoteClass(alias="org.pyamf.examples.sharedobject.vo.SharedObject")]
-	
+
 	public class SharedObject
 	{
 		public var name:String;
@@ -9,7 +9,7 @@ package org.pyamf.examples.sharedobject.vo
 		public var path:String;
 		public var domain:String;
 		public var size:int;
-			
+
 		public function SharedObject( name:String="",
 									  app:String="",
 									  path:String="",
